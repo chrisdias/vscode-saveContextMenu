@@ -1,0 +1,69 @@
+{
+  "name": "vscode-savecontextmenu",
+  "displayName": "vscode-saveContextMenu",
+  "publisher": "chrisdias",
+  "author": {
+    "name": "Chris Dias"
+  },
+  "description": "Adds a 'Save...' entry to the Editor tab context menu",
+  "version": "0.0.1",
+  "galleryBanner": {
+    "color": "#37699A",
+    "theme": "dark"
+  },
+  "icon": "images/save.png",
+  "homepage": "https://github.com/chrisdias/vscode-savecontextmenu/blob/master/README.md",
+  "repository": {
+    "url": "https://vscode.dev/github/chrisdias/vscode-savecontextmenu"
+  },
+  "bugs": {
+    "url": "https://github.com/chrisdias/vscode-savecontextmenu/issues"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-savecontextmenu.saveFile",
+        "title": "Save...",
+        "shortTitle": "Save..."
+      }
+    ],
+    "menus": {
+      "editor/title/context": [
+        {
+          "command": "vscode-savecontextmenu.saveFile",
+          "group": "navigation"
+        }
+      ],
+      "commandPalette": [
+        {
+            "command": "vscode-savecontextmenu.saveFile",
+            "when": "never"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.92.0",
+    "@types/node": "18.x",
+    "typescript": "^5.3.3"
+  }
+}
