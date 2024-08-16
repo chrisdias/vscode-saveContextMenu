@@ -24,6 +24,6 @@ The `repository` field in `package.json` points to `vscode.dev`. Override this t
  vsce package --baseContentUrl https://github.com/chrisdias/vscode-savecontextmenu/blob/HEAD --baseImagesUrl https://github.com/chrisdias/vscode-savecontextmenu/raw/HEAD
 ```
 
-## License
+## Source Code License
 
 [MIT](LICENSE.md)
