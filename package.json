@@ -6,7 +6,7 @@
     "name": "Chris Dias"
   },
   "description": "Adds a 'Save...' entry to the Editor tab context menu",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "galleryBanner": {
     "color": "#37699A",
     "theme": "dark"
