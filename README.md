@@ -4,14 +4,11 @@
 
 ## Features
 
-This extension adds a new context menus to an Editor tab to Save the file. It is most useful when you have
-AutoSave turned on and new Untitled files are added to the workspace.
-
-* **Save...**: Invokes the Save dialog. 
+This extension adds a new context menu on an Editor tab to Save the file. It's for those of us who, for some reason, like to right click on things rather than press Ctrl+S (or CMD+S on Mac).
 
 ## Using
 
-Right click on an Editor tab, choose **Save...**.
+Right click on an Editor tab, choose **Save...**. That editor will be brought to the front and the Save action will be invoked.
 
 ![Preview](images/preview.png)
 

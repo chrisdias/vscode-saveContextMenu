@@ -1,12 +1,12 @@
 {
   "name": "vscode-savecontextmenu",
-  "displayName": "vscode-saveContextMenu",
+  "displayName": "Editor Tab 'Save...' Context Menu",
   "publisher": "chrisdias",
   "author": {
     "name": "Chris Dias"
   },
   "description": "Adds a 'Save...' entry to the Editor tab context menu",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "galleryBanner": {
     "color": "#37699A",
     "theme": "dark"
